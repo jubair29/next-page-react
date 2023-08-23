@@ -16,7 +16,7 @@ const Header = () => {
         <Link to="/" className="flex items-center">
           <BoltIcon className="w-6 h-6 text-blue-700" />
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-            NextPage
+            Next<span className="text-blue-800">Page</span>
           </span>
         </Link>
       </div>
