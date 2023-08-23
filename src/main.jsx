@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./componants/Home.jsx";
 import About from "./componants/About.jsx";
+import Books from "./componants/Books.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,9 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path:'/book',
-        element: <div>this is books</div>
+        path:'/books',
+        element: <Books/>,
+        loader: () => fetch('https://api.itbook.store/1.0/new')
       },
       {
         path:'/about',

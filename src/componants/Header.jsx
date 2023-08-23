@@ -44,7 +44,7 @@ const Header = () => {
                 </li>
                 <li className="md:ml-6">
                 <NavLink
-                    to="/book"
+                    to="/books"
                     className={({ isActive }) => (isActive ? "text-blue-800" : "")}
                 >
                     Books
