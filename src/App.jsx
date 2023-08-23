@@ -6,7 +6,6 @@ import Header from './componants/Header';
 const App = () => {
   return (
     <div>
-      <div>This is main part of web site</div>
       <Header/>
 
       <Outlet></Outlet>
