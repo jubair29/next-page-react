@@ -10,6 +10,7 @@ const Books = () => {
             <div className='grid gap-6 lg:grid-cols-4 md:grid-cols-2 '>
                 {
                 books.books.map(book => <Book
+                key={book.isbn13}
                 book={book}
                 ></Book>)
                 }
